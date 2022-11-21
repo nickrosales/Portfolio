@@ -1,10 +1,5 @@
-* {
 
-}
-img {
-    max-width: 300px;
-    display: flex;
-}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -40,19 +35,46 @@ header nav ul li a {
 }
 .sub img {
     max-width: 200px;
-    display: block;
 }
 
 h2 {
     font-size: 250%;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 h3 {
     font-size: 200%;
+}
+
+.abtContent {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wkContent {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1500px;
+}
+
+.cmContent {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cmContent nav {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+.cmContent nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    align-items: center;
 }
