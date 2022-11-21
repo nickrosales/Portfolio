@@ -1,9 +1,9 @@
 
-
+/*changes to font to the whole body*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*aligns text in heading, background and font color and spacing*/
 header {
     display: flex;
     justify-content: space-between;
@@ -12,22 +12,22 @@ header {
     background-color: rgb(4, 4, 56);
     padding: 15px;
 }
-
+/*sets the font of h1*/
 h1 {
     font-size: 350%;
 }
-
+/*sets the nav bar style*/
 header nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 250px;
 }
-
+/*changes nav bar text style*/
 header nav ul li a {
     color: white;
     text-decoration: none;
 }
-
+/*sets sub class to flex aligns items sets background color*/
 .sub {
     padding: 15px;
     display: flex;
@@ -35,61 +35,61 @@ header nav ul li a {
     align-items: center;
     background-color: rgb(80, 80, 80);
 }
+/*changes image size in sub */
 .sub img {
     max-width: 200px;
 }
-
+/*changes h2 font size*/
 h2 {
     font-size: 250%;
 }
-
+/*changes h3 font size*/
 h3 {
     font-size: 200%;
 }
-
+/*aligns items, pushes content to the left*/
 .abtContent {
     display: flex;
     margin-top: 30px;
     flex-direction: row;
     justify-content: flex-start;
 }
-
+/*aligns items*/
 .abtContent p {
     padding-left: 200px;
 }
-
+/*aligins items*/
 .wkContent {
     display: flex;
     margin-top: 30px;
 }
-
+/*aligns items, adds spacing*/
 .cmContent {
     display: flex;
     margin-top: 30px;
     flex-direction: row;
     justify-content: space-between;
 }
-
-
+/*styles bottom nav bar, alignes items*/
 .cmContent nav {
     display: flex;
     justify-content: space-around;
     width: 75%;
 }
-
+/*aligns itmes in nav bar */
 .cmContent nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 900px;
     align-items: center;
 }
-
+/*cneters images and wraps them it next line*/
 .allImages {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/*sets image size, border and aligns the 1st image element*/
 #bigImage {
     border-style: solid;
     border-width: 5px;
@@ -100,18 +100,17 @@ h3 {
     margin: 5px;
     max-width: 100%;
 }
-
-
+/*sizes the image in the element*/
 #bigImage a img {
     width: 100%;
     min-width: 600px;
 }
-
+/*sets image size, border and aligns the other images element*/
 .otherImage a img {
     width: 100%;
     min-width: 200px;
 }
-
+/*sizes the image in the element*/
 .otherImage {
     display: flex;
     position: relative;
@@ -123,7 +122,7 @@ h3 {
     max-width: 30%;
     min-width: 200px
 }
-
+/*sets the text box as absolute and styles and aligns it*/
 .imageText {
     position: absolute;
     background-color: rgb(0, 0, 0);
@@ -134,7 +133,7 @@ h3 {
     padding: 5px;
     text-align: center;
 }
-
+/*adds resposive display to devices at 992px or smaller. updates the header colors, changes bot nav bars layout */
 @media screen and (max-width: 992px) {
     header {
         background-color: gray;
