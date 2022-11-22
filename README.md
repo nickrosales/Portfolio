@@ -6,7 +6,7 @@ In this challenge I built a portfolio website. This will be used so employers ca
 
 ## Screenshot
 
-![screenshot of page](assets/images/portfolioSS1.PNG)
+![screenshot of page](assets/images/portfolioSS.PNG)
 
 ## Credit
 
