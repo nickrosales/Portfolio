@@ -1,5 +1,9 @@
 
 /*changes to font to the whole body*/
+:root {
+    --color1: #0b2060;
+    --color2: #008080;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,7 +13,7 @@ header {
     justify-content: space-between;
     color: white;
     align-items: center;
-    background-color: rgb(4, 4, 56);
+    background-color: var(--color1);
     padding: 15px;
 }
 /*sets the font of h1*/
@@ -17,13 +21,14 @@ h1 {
     font-size: 350%;
 }
 /*sets the nav bar style*/
-header nav ul {
+header nav ul, footer nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 250px;
+    list-style: none;
 }
 /*changes nav bar text style*/
-header nav ul li a {
+header a, footer a {
     color: white;
     text-decoration: none;
 }
@@ -33,11 +38,15 @@ header nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--color2);
 }
 /*changes image size in sub */
 .sub img {
     max-width: 200px;
+}
+
+section {
+    background-color: var(--color2);;
 }
 /*changes h2 font size*/
 h2 {
@@ -46,97 +55,100 @@ h2 {
 /*changes h3 font size*/
 h3 {
     font-size: 200%;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: var(--color1);
+    color: white;
 }
-/*aligns items, pushes content to the left*/
-.abtContent {
+
+h4 {
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.abtme {
+    background-color: ;
+    color: ;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+main header {
+    background-color: var(--color2);
     display: flex;
-    margin-top: 30px;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    color: black;
 }
-/*aligns items*/
-.abtContent p {
-    padding-left: 200px;
-}
-/*aligins items*/
-.wkContent {
-    display: flex;
-    margin-top: 30px;
-}
-/*aligns items, adds spacing*/
-.cmContent {
-    display: flex;
-    margin-top: 30px;
-    flex-direction: row;
-    justify-content: space-between;
-}
-/*styles bottom nav bar, alignes items*/
-.cmContent nav {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-}
-/*aligns itmes in nav bar */
-.cmContent nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 900px;
-    align-items: center;
-}
-/*cneters images and wraps them it next line*/
-.allImages {
+
+main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 2%;
+    max-width: 75%;
+    margin: auto;
 }
-/*sets image size, border and aligns the 1st image element*/
-#bigImage {
+
+main > section {
+    flex: 1 0 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+main > section:first-child {
+    flex: 0 1 100%;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
     border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    max-width: 100%;
+    border-width: 2px;
+    border-color: white;
+    background-color: var(--color1);
 }
+
+.card img {
+    width: 10%;
+    min-width: 300px;
+}
+
+
 /*sizes the image in the element*/
-#bigImage a img {
-    width: 100%;
-    min-width: 600px;
+#image1 a img {
+    width: 50%;
 }
 /*sets image size, border and aligns the other images element*/
-.otherImage a img {
-    width: 100%;
-    min-width: 200px;
+#image2 a img {
+    width: 50%;
 }
-/*sizes the image in the element*/
-.otherImage {
-    display: flex;
-    position: relative;
-    justify-content: center;
+
+#image3 a img {
+    width: 50%;
+
+}
+
+footer {
+    padding-top: 10px;
+    background-color: var(--color1);
     border-style: solid;
     border-width: 5px;
-    border-color: black;
-    margin: 5px;
-    max-width: 30%;
-    min-width: 200px
-}
-/*sets the text box as absolute and styles and aligns it*/
-.imageText {
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-color: black;
+    border-color: white;
     color: white;
-    border-width: 0  5px 5px 5px;
-    padding: 5px;
-    text-align: center;
+
+}
+
+footer nav {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
 }
 /*adds resposive display to devices at 992px or smaller. updates the header colors, changes bot nav bars layout */
 @media screen and (max-width: 992px) {
-    header {
-        background-color: gray;
+    :root {
+        --color1: black;
+        --color2: rgb(188, 183, 183);
     }
     header nav ul {
         flex-direction: column;
@@ -146,14 +158,11 @@ h3 {
     header nav ul li {
         min-height: 35px;
     }
-    .cmContent nav ul {
+    footer nav ul {
         flex-direction: column;
         align-items: center;
     }
-    .cmContent nav ul li {
+    footer nav ul li {
         min-height: 35px;
-    }
-    .cmContent {
-        align-items: center;
     }
 }
