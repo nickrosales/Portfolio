@@ -20,14 +20,14 @@ header {
 h1 {
     font-size: 350%;
 }
-/*sets the nav bar style*/
+/*sets both nav bars style*/
 header nav ul, footer nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 250px;
     list-style: none;
 }
-/*changes nav bar text style*/
+/*changes both nav bar text style*/
 header a, footer a {
     color: white;
     text-decoration: none;
@@ -44,7 +44,7 @@ header a, footer a {
 .sub img {
     max-width: 200px;
 }
-
+/*changes the background color*/
 section {
     background-color: var(--color2);;
 }
@@ -52,7 +52,7 @@ section {
 h2 {
     font-size: 250%;
 }
-/*changes h3 font size*/
+/*changes h3 font size aligns text and */
 h3 {
     font-size: 200%;
     text-align: center;
@@ -60,25 +60,25 @@ h3 {
     background-color: var(--color1);
     color: white;
 }
-
+/*changes styleing and aligns the h4 titles*/
 h4 {
     font-size: 150%;
     text-align: center;
     padding-bottom: 10px;
 }
-
+/*amdds paddiong and line hight*/
 .abtme {
     padding: 5px;
     line-height: 1.5;
 }
-
+/*adds background color and aligns the headers in main*/
 main header {
     background-color: var(--color2);
     display: flex;
     justify-content: center;
     color: black;
 }
-
+/*sets main to be flexable wraps texts and aligns the main section*/
 main {
     display: flex;
     flex-wrap: wrap;
@@ -86,17 +86,17 @@ main {
     max-width: 75%;
     margin: auto;
 }
-
+/*sets the 2nd and 3rd img of the main element tot ake up 50% */
 main > section {
     flex: 1 0 50%;
     text-align: center;
     padding: 10px;
 }
-
+/*sets the 1st child of the main element to take up 100%*/
 main > section:first-child {
     flex: 0 1 100%;
 }
-
+/*adds style, color, sizing and aligns card class*/
 .card {
     flex: 1 0 0;
     padding: 10px;
@@ -106,7 +106,7 @@ main > section:first-child {
     border-color: white;
     background-color: var(--color1);
 }
-
+/*sets the size of the image in the element*/
 .card img {
     width: 10%;
     min-width: 300px;
@@ -117,16 +117,16 @@ main > section:first-child {
 #image1 a img {
     width: 50%;
 }
-/*sets image size, border and aligns the other images element*/
+/*sizes the image in the element*/
 #image2 a img {
     width: 50%;
 }
-
+/*sizes the image in the element*/
 #image3 a img {
     width: 50%;
 
 }
-
+/*adds borders, padding and color to footer */
 footer {
     padding-top: 10px;
     background-color: var(--color1);
@@ -136,7 +136,7 @@ footer {
     color: white;
 
 }
-
+/*size and spaces the footer nav bar*/
 footer nav {
     width: 70%;
     margin: auto;
